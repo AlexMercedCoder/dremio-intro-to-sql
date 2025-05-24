@@ -1,14 +1,6 @@
 version: "3"
 
 services:
-  # Nessie Catalog Server Using In-Memory Store
-  catalog:
-    image: projectnessie/nessie:latest
-    container_name: catalog
-    networks:
-      sql-analyst-101:
-    ports:
-      - 19120:19120
 
   # Minio Storage Server
   storage:
